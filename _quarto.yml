@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - downloads/
+
+website:
+  title: "Cem Emrence"
+  description: "Political scientist studying violence and rhetoric using computational methods and causal inference."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: data.qmd
+        text: Data
+      - href: teaching.qmd
+        text: Teaching
+      - href: cv.qmd
+        text: CV
+    right:
+      - icon: envelope
+        href: mailto:emrence@umich.edu
+        aria-label: Email
+  page-footer:
+    center: "© 2026 Cem Emrence"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 2
+    anchor-sections: false
+    link-external-newwindow: true

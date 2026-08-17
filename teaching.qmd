@@ -1,0 +1,41 @@
+---
+title: "Teaching"
+---
+
+I teach at the intersection of substance and method. Students arrive in political science courses curious about war, democracy, or artificial intelligence. My job is to help them turn that curiosity into a question that evidence can answer. That means teaching technical tools alongside the political problems that make them worth learning, and paying sustained attention to research design and what a result can and cannot support.
+
+## Taught
+
+My teaching spans methods and substance, mirroring my research profile.
+
+### Text-as-data and programming
+
+*Social Science Computer Usage* (graduate, two-semester sequence, instructor of record). Designed for incoming graduate students as a complement to the department's methods sequence: LaTeX, programming in R, and advanced methods worked through with raw datasets and replication materials.
+
+*Text as Data for Social Science* (graduate). Sections on getting text into machine-readable form, topic modeling, syntactic analysis, cross-validation, and dimensionality reduction.
+
+### Statistics and causal inference
+
+*Quantitative Methods in Social Science* (undergraduate). Descriptive statistics, hypothesis testing, and interpretation of test statistics.
+
+*Statistical Methods in Political Science II* and *Causal Inference II* (graduate). Feedback on problem sets covering topics such as the backdoor criterion, matching, bootstrapping, and directed acyclic graphs.
+
+### World politics
+
+*Introduction to World Politics* (undergraduate). A large-enrollment survey framing current events against IR theories and concepts, with sustained attention to academic writing.
+
+*State Repression and Human Rights* (undergraduate). Upper-division discussion sections on evidence, datasets, and measurement in the study of repression and human rights regimes.
+
+### Evaluations
+
+Across 120 students, respondent-weighted course medians average 4.6/5 for clear explanation of material and 4.7/5 for students' understanding of core concepts, with 4.8/5 for treating students with respect. Ninety-three percent of respondents were undergraduates, and about two-thirds came from an introductory course.
+
+## Proposed courses
+
+**Computational Social Science** (graduate). Core computational methods taught as a single workflow rather than separate modules, moving from data and programming through text analysis to causal inference. Students convert political text into machine-readable data, perform NLP tasks through supervised and unsupervised learning, and estimate causal quantities using staggered difference-in-differences and related designs. Each method is applied to questions from current research, such as violence prediction in armed conflicts, political surveillance in autocracies, or affective polarization in American politics. The course complements a standard methods sequence rather than duplicating it, adding the computational and text-as-data skills that increasingly drive empirical work. A research paper is timed to the moment students begin formulating a dissertation, and is meant to seed one.
+
+**Conflict & Language** (graduate). A survey of conflict scholarship asking why political violence begins, how it unfolds, and how it ends. Themes include material and ideational drivers of conflict, internal armed conflict, counterinsurgency, rebel governance, and negotiated settlements along with movement-based contention such as protest. The course's distinctive contribution is a module on the language of conflict, in which students work with primary insurgent texts — including material from *Insurgents Speak* — and learn to apply text-analysis methods to conflict research. Students develop an original question in an exploratory term project.
+
+**Politics & AI** (undergraduate, upper division). A course built on the premise that politics and AI shape each other. AI disrupts elections, campaign strategy, governance, national security, and surveillance, while legislation, state funding, and geopolitical rivalry shape what AI becomes. Students work on both sides of the technology. In policy labs they adjust a single lever in a pre-built model and evaluate the political trade-offs of algorithmic assessment — examining, for instance, how false-positive rates for recidivism shift across racial groups in the COMPAS data. In audit labs they classify the emotive content of political speeches with a fine-tuned language model, hand-code their own benchmark for the same texts, and interpret where the model's judgments diverge from their own.
+
+Each course is designed through to assignments and assessment. I am ready to teach all three. Computational Social Science draws on fifteen graduate courses in programming, statistics, causal inference, and text-as-data, and on my own research; Conflict & Language covers the field I have published in; and Politics & AI builds on labs I have already designed. Having taught undergraduates in a large introductory survey, an upper-division seminar, and a quantitative methods course, I am also glad to take on undergraduate teaching as departmental needs require.

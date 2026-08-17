@@ -1,0 +1,46 @@
+---
+title: "Cem Emrence"
+subtitle: "Ph.D. Candidate in Political Science · University of Michigan"
+toc: false
+about:
+  template: solana
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:emrence@umich.edu
+    - icon: file-earmark-pdf
+      text: Job Market Paper
+      href: downloads/job_market_paper.pdf
+    - icon: file-earmark-text
+      text: Curriculum Vitae
+      href: downloads/cv.pdf
+---
+
+**On the academic job market, 2026–27 · Defending May 2027**\
+Fields: World Politics, Quantitative Methodology
+
+I am a political scientist studying violence and rhetoric using computational methods and causal inference. I ask why political outsiders — insurgents, revolutionaries, and activists — speak differently from politicians.
+
+My dissertation, *The Language of Non-Institutional Politics and Power*, shows that outsiders rely on an action-oriented rhetoric and that a movement organization's power explains its intensity. I test the argument on one of the largest original corpora on non-institutional politics to date: roughly one million pages of movement periodicals and legislative speech, with external validation from interwar U.S. data.
+
+## Selected credentials
+
+- *Zones of Rebellion* (Cornell University Press, 2015)
+- Best Paper Award, *International Interactions* (2021)
+- Under review, *Journal of Peace Research*
+
+## Interests
+
+Outsider Politics & Mobilization · Political Violence & Conflict · Text-as-Data & NLP · Causal Inference
+
+## Methods training
+
+*University of Michigan; ICPSR*
+
+**Text-as-Data & NLP.** POS tagging, dependency parsing, topic modeling, word embeddings, transformer models, dictionary methods, OCR and web scraping
+
+**Statistics & Causal Inference.** Synthetic control, instrumental variables, difference-in-differences, matching, directed acyclic graphs
+
+**Additional.** Spatial analysis and GIS, network theory, game theory
+
+**Software.** R, Stata, LaTeX, ArcGIS

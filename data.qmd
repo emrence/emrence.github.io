@@ -1,0 +1,65 @@
+---
+title: "Data"
+---
+
+This page documents the corpora built for the dissertation and introduces *Insurgents Speak*, a public dataset that scales data collection through moderated crowdsourcing.
+
+All four text corpora employed in the dissertation were built from scratch. The periodicals and the legislative record are available online as PDFs with no bulk download option. I automated the downloads (N = 18,051) with cURL and ran OCR at the page level with Tesseract, which also required dealing with multi-column layouts and, often, improving image quality with ImageMagick beforehand. The jobs ran in parallel to speed up the OCR step and demanded a large storage space for the originals.
+
+Since the empirical analysis involved more than text, I created an identifier at the month-year level, the most granular unit at which movement periodicals and legislative speech can be compared. Accordingly, every page carries an identifier encoding that unit. I also built covariates identifying who produced each journal-issue and for whom (movement, movement organization, audience), along with measures constructed from the text itself. Part-of-speech tagging and dependency parsing with udpipe then produced verb densities at the month-year level. Three further datasets — insurgent attacks, weather station records, and administrative units — support the identification strategy and are documented in the appendices of the job market paper.
+
+### Text corpora
+
+| Corpus | Politics | Coverage | Issues | Pages |
+|---|---|---|---|---|
+| Revolutionary periodicals | Non-institutional | 1945–1998 | 8,458 | 230,665 |
+| Grand National Assembly, *Tutanak* | Institutional | 1945–1998 | 8,617 | 740,789 |
+| Ku Klux Klan, *The Kourier* | Non-institutional | 1924–1931 | 84 | 3,004 |
+| U.S. Congress, *Congressional Record* | Institutional | 1924–1931 | 892 | 66,451 |
+
+*Notes.* The revolutionary periodicals corpus draws on 300 titles published by socialist and ethnic movements. *Tutanak* issues correspond to individual sittings. *Congressional Record* counts refer to the bound edition, in which each issue consolidates a day's Senate and House proceedings. The empirical analysis aggregates all text to the month-year level, so differences in publication practice do not affect the comparison.
+
+## Insurgents Speak
+
+Over the years conflict researchers have collected valuable data on what armed groups do. In particular, global and micro-level event datasets track attacks, battles, and casualties across decades and continents. What these datasets cannot tell us is what these groups say and write. Where insurgent publications survive at all, they do so unevenly and in dozens of languages. They have never been collected systematically.
+
+*Insurgents Speak* is an attempt to close that gap. It is the first public multilingual corpus of insurgent-produced texts, paired with conflict outcomes from the Uppsala Conflict Data Program. A beta corpus covering Turkish and Latin American groups arrives in Fall 2027, followed by the R package in Spring 2028. Moderated crowdsourcing begins once the beta is complete, with the corpus growing toward 100 groups and 100,000 documents.
+
+UCDP anchors the pilot because it makes every document linkable to existing conflict data. A second iteration will extend coverage to insurgencies that do not meet its casualty threshold or that go unrecorded in UCDP. In doing so, the corpus will also widen the universe of non-state actors available to quantitative conflict research.
+
+The project is designed as a collective effort. Building the dissertation corpora took years of individual effort, and that approach does not easily scale to a hundred groups writing in a dozen languages. *Insurgents Speak* instead uses moderated crowdsourcing. Contributors locate and submit documents against a fixed metadata schema, and every submission is validated before it enters the corpus. The aim is to grow quickly without surrendering the consistency that makes a corpus analytically useful.
+
+*Insurgents Speak* is distributed in three tiers. Metadata is public for every document located, whether or not its text can be redistributed. Derived features — token counts, part-of-speech distributions, dependency relations, and summary measures such as verb density — are public for every document processed, since these are not reproductions of the underlying text. Full text is distributed where rights permit: works in the public domain, works under an open license, and works for which permission has been granted. In practice this means the corpus can grow to the limit of what can be processed rather than the limit of what can be republished.
+
+An accompanying R package will connect insurgent rhetoric to existing conflict datasets, so that researchers can move between what groups said and what they did. Since every document is linked to a group, and groups in UCDP carry an actor ID, the package can join text to conflict events, actor characteristics, and outcomes without users mapping actors themselves. For most analyses the feature layer is what researchers need, and it will be available regardless of a document's rights status.
+
+### Sample
+
+The table below shows five documents across nine fields, with the excerpt column set out separately. Field definitions, code tables, and coding conventions are documented in the [data dictionary](downloads/insurgents_speak_dictionary.pdf) (PDF).
+
+| doc_id | group_id | group_short | ucdp_id | year | month | language | doc_type |
+|---|---|---|---|---|---|---|---|
+| 1 | 1 | Dev-Sol | 334 | 1980 | 3 | tur | 1 |
+| 2 | 2 | PIRA | 282 | 1970 | 10 | eng | 1 |
+| 3 | 3 | PCP | 750 | 1988 | 2 | spa | 1 |
+| 4 | 4 | FRELIMO | 428 | 1966 | 9 | por | 1 |
+| 5 | 5 | CPN(M) | 146 | 1996 | 6 | eng | 1 |
+
+*Notes.* The sample reflects material that is currently digitized and accessible, which skews toward European languages; extending coverage beyond it is a priority for the pilot.
+
+::: {.excerpt-block}
+**text_excerpt (table continued)**
+
+**1 · Dev-Sol.** İki devrim, yani burjuva demokratik devrim ile sosyalist devrimin tek bir süreç içinde verilmesi, proletaryanın önderliğinde, demokratik halk devriminin gerçekleştirilmesi demektir.
+
+**2 · PIRA.** Belfast is a sick city, and its East End the sickest of the lot. Religion plays a very small part in it all.
+
+**3 · PCP.** Lo fundamental del maoísmo es el Poder. El Poder para el proletariado, el Poder para la dictadura del proletariado, el Poder basado en una fuerza armada dirigida por el Partido Comunista.
+
+**4 · FRELIMO.** Neste dia, eu, filho de Moçambique, nacionalista e patriota, juro pelo que há de mais sagrado para mim — o meu povo, a minha pátria — pôr todas as minhas forças ao serviço da Revolução.
+
+**5 · CPN(M).** Finally, we appeal to the workers, peasants, women, students, teachers, intellectuals and the masses of the people of all categories and trades to march along the process of people's war.
+
+:::
+
+*Excerpts are lightly corrected for OCR error.*
